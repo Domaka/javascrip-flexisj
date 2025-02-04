@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+</head>
+<body>
+    <h1>Open Console (F12 > Console) to See JavaScript Output</h1>
+    <script>
+        // String, Number, Boolean
+        let name = "Barry";
+        let age = 25;
+        let isStudent = true;
+
+        console.log("Name:", name);
+        console.log("Age:", age);
+        console.log("Is Student:", isStudent);
+
+        // Comparison
+        console.log("Age > 18:", age > 18);
+        console.log("Age === 25:", age === 25);
+        console.log("Is Student && Age < 30:", isStudent && age < 30);
+
+        // Function
+        function greet(person) {
+            return "Hello, " + person + "!";
+        }
+        console.log(greet(name));
+
+        // Array
+        let fruits = ["Apple", "Banana", "Cherry"];
+        console.log("Fruits:", fruits);
+        console.log("First Fruit:", fruits[0]);
+
+        // Object
+        let car = {
+            brand: "Toyota",
+            model: "Corolla",
+            year: 2022
+        };
+        console.log("Car Info:", car);
+        console.log("Car Brand:", car.brand);
+
+        // Loop
+        console.log("Looping through Fruits:");
+        for (let i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+    </script>
+</body>
+</html>
